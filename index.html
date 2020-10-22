@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LINE LIFF DEMO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="liffAppContent">
+
+  </div>
+
+  <!-- LOGIN LOGOUT BUTTONS -->
+  <div class="buttonGroup">
+    <button id="liffLoginButton">Log in</button>
+    <button id="liffLogoutButton">Log out</button>
+  </div>
+
+  <!-- LIFF INIT ERROR -->
+  <div id="liffInitErrorMessage" class="hidden">
+    <p>Something went wrong with LIFF initialization.</p>
+    <p>LIFF initialization can fail if a user clicks "Cancel" on the "Grant permission" screen, or if an error occurs in
+      the process of <code>liff.init()</code>.</p>
+  </div>
+  <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+  <script src="liff-starter.js"></script>
+</body>
+
+</html>
